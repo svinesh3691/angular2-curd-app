@@ -1,7 +1,8 @@
 # Angular2- CURD Application
 
-This is an angular 2 `CURD Application` .
-This has curd operations - Create, Update, Read and Delete operation of  a  module name `contacts`
+This is an angular 2 `CURD Application`.
+
+This has curd operations - Create, Update, Read and Delete operation of  a  module named `contacts`
 
 
 
