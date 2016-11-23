@@ -1,0 +1,15 @@
+<div>
+	
+	<h2>Add Contact</h2>
+	<form>
+		
+		Name: <input [(ngModel)]="contact.name" placeholder="Name" name="name"/><br><br>
+		Phone: <input [(ngModel)]="contact.phone" placeholder="Phone" name="phone"/><br><br>
+
+		<input type="button" (click)="add()" name="save" value="Save">
+		<input type="button" (click)="goBack()" value="Back">
+	</form>
+
+
+</div>
+
