@@ -1,0 +1,24 @@
+<h2>Contact List</h2>
+
+<button [routerLink]="['/curd-add']"> Add New Contact </button> <br><br>
+
+<table border="1">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Mobile</th>
+			<th>Actions</th>
+		</tr>
+		<tr *ngFor="let contact of contacts">
+			<td>{{contact.id}}</td>
+			<td>{{contact.name}}</td>
+			<td>{{contact.phone}}</td>
+			<td>
+				&nbsp;<a [routerLink]="['/curd-edit', contact.id]" >Edit</a>&nbsp;
+				&nbsp;<a (click)="deleteContact(contact.id)">Delete</a>&nbsp;
+			</td>
+		</tr>
+	</thead>
+
+</table>

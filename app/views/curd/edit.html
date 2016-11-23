@@ -1,0 +1,15 @@
+<div *ngIf="contact" >
+	
+	<h2>Edit Contact - {{contact.name}} </h2>
+	<form>
+		
+		Name: <input [(ngModel)]="contact.name" placeholder="Name" name="name"/><br><br>
+		Phone: <input [(ngModel)]="contact.phone" placeholder="Phone" name="phone"/><br><br>
+
+		<input type="button" (click)="update()" name="Update" value="Update">
+		<input type="button" (click)="goBack()" value="Back">
+	</form>
+
+
+</div>
+
